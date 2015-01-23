@@ -50,9 +50,11 @@
      <Compile Include="Assets\Scripts\Utility\Game.cs" />
      <Compile Include="Assets\Scripts\Utility\IPoolManager.cs" />
      <Compile Include="Assets\Scripts\Utility\IPoolableObject.cs" />
+     <Compile Include="Assets\Scripts\Utility\MusicPlayer.cs" />
      <Compile Include="Assets\Scripts\Utility\PoolableSettings.cs" />
      <Compile Include="Assets\Scripts\Utility\Settings.cs" />
      <Compile Include="Assets\Scripts\Utility\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Utility\SoundEffectPlayer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

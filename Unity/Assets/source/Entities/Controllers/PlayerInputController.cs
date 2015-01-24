@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.source.Entities.Controllers;
 
-public class PlayerBehaviour : EventContainerBase {
+public class PlayerInputController : EventContainerBase, IController, IInputController
+{
 
-	private Player	_player;
+	private MovementController	_player;
 
 	private bool 	_moveLeft	= false;
 	private bool	_moveRight	= false;
@@ -19,10 +21,10 @@ public class PlayerBehaviour : EventContainerBase {
 		_controllerInputController.OnButtonReleased	+= HandleOnButtonReleased;
 		_controllerInputController.OnStickActive	+= HandleOnStickActive;
 
-		_player = gameObject.GetComponent<Player>();
+		_player = gameObject.GetComponent<MovementController>();
 	}
 
-	void HandleOnStickActive (StickType p_stickType, float p_speed, int p_playerIndex){
+	public void HandleOnStickActive (StickType p_stickType, float p_speed, int p_playerIndex){
 		switch(p_stickType){
 		case StickType.LeftX:
 			if(_player != null) _player.Move(p_speed);
@@ -30,7 +32,8 @@ public class PlayerBehaviour : EventContainerBase {
 		}
 	}
 
-	void HandleOnButtonReleased (ControllerButton p_controllerButton, int p_playerIndex){
+    public void HandleOnButtonReleased(ControllerButton p_controllerButton, int p_playerIndex)
+    {
 		switch(p_controllerButton){
 		case ControllerButton.A:
 			if(_player != null) _player.Jump();
@@ -38,7 +41,7 @@ public class PlayerBehaviour : EventContainerBase {
 		}
 	}
 
-	void HandleOnButtonPressed (ControllerButton p_controllerButton, int p_playerIndex){
+    public void HandleOnButtonPressed(ControllerButton p_controllerButton, int p_playerIndex)
+    {
 	}
-
 }

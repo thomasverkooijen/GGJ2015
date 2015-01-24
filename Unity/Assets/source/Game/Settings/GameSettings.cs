@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameSettings : Singleton<GameSettings>
 {
-    public static GameSettings Instance;
+    //public static GameSettings Instance;
     public GameObject AudioLibraryPrefab;
     public GameObject GuiStateLibraryPrefab;
     public GameObject GuiTweenLibrary;

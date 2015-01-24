@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour
+public class MovementController : MonoBehaviour, IController
 {
 
     CollisionDetection _collisionDetection = new CollisionDetection();
@@ -15,12 +15,25 @@ public class Player : MonoBehaviour
 
     private Vector2 _position;
 
+    private MovementModel _movementModel;
+
+    void Start()
+    {
+        _movementModel = GetComponent<MovementModel>();
+        if (_movementModel == null)
+        {
+            throw new MissingComponentException(gameObject.name + " has no _movementModel, have you forgotten to add one manually?");
+        }
+    }
+
+
     void Update()
     {
         _position = transform.position;
 
         HandleHorizontalMovement();
         HandleVerticalMovement();
+        HandleHorizontalDrag();
 
         if (_collisionDetection.Grounded) _yVelocity = 0;
 
@@ -29,14 +42,21 @@ public class Player : MonoBehaviour
 
     public void Move(float p_speed)
     {
-        _xVelocity = p_speed * _maxSpeed;
+        if (_collisionDetection.Grounded)
+        {
+            _xVelocity += p_speed * _maxSpeed;
+        }
+        else
+        {
+            _xVelocity += (p_speed * _movementModel.AirControl) * _maxSpeed;
+        }
     }
 
     public void Jump()
     {
         if (_collisionDetection.Grounded)
         {
-            _yVelocity = 30;
+            _yVelocity = _movementModel.JumpSpeed;
         }
     }
 
@@ -52,4 +72,8 @@ public class Player : MonoBehaviour
         transform.Translate(Vector2.up * addedY);
     }
 
+    private void HandleHorizontalDrag()
+    {
+        _xVelocity *= (_movementModel.HorizontalDrag * Time.deltaTime);
+    }
 }

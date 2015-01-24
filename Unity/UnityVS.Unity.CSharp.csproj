@@ -69,6 +69,7 @@
     <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\PlayerInputController.cs" />
+    <Compile Include="Assets\source\Entities\Models\AIModel.cs" />
     <Compile Include="Assets\source\Entities\Models\IModel.cs" />
     <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
     <Compile Include="Assets\source\Entities\Views\IView.cs" />

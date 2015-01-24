@@ -1,28 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.source.Entities.Controllers;
+using Assets.source.Entities.Models;
 
 public class AIInputController : MonoBehaviour, IController, IInputController
 {
     private MovementController _player;
+    private AIModel _AIModel;
+
+    private float _AITimeStep = 0.25f;
+    private float _decisionValue = 0.5f;
 
     void Start()
     {
+        _AIModel = GetComponent<AIModel>();
+        _decisionValue = Random.value;
         _player = GetComponent<MovementController>();
+        StartCoroutine(AIStep());
+    }
+
+    IEnumerator AIStep()
+    {
+        _decisionValue = Random.value;
+        yield return new WaitForSeconds(_AIModel.TimeStep);
+        StartCoroutine(AIStep());
     }
 
     void Update()
     {
-        float randomValue = Random.value;
-        if (randomValue >= 0.7f)
+        if (_decisionValue >= 0.7f)
         {
             HandleOnStickActive(StickType.LeftX, Random.value, 5);
         }
-        if (randomValue <= 0.3f)
+        if (_decisionValue <= 0.3f)
         {
             HandleOnStickActive(StickType.LeftX, -Random.value, 5);
         }
-        if (randomValue >= 0.45f && randomValue <= .55f)
+        if (_decisionValue >= 0.45f && _decisionValue <= .55f)
         {
             HandleOnButtonReleased(ControllerButton.A, 5);
         }

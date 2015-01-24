@@ -14,4 +14,6 @@ public class GameSettings : Singleton<GameSettings>
     {
         AudioLibrary.Init(AudioLibraryPrefab);
     }
+
+    public float JumpSpeedBase = 30.0f;
 }

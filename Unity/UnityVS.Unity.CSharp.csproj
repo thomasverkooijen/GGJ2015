@@ -7,16 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{164A416E-423A-6066-5BD1-6E559E316DD4}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -68,8 +66,8 @@
     <Compile Include="Assets\source\Entities\Base\IEntity.cs" />
     <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
-    <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
+    <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\PlayerInputController.cs" />
     <Compile Include="Assets\source\Entities\Models\AIModel.cs" />
@@ -89,6 +87,7 @@
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\TextSettings.cs" />
+    <None Include="Assets\Editor\Resources\Licenses.txt" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />

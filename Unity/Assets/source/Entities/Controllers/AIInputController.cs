@@ -3,7 +3,7 @@ using System.Collections;
 using Assets.source.Entities.Controllers;
 using Assets.source.Entities.Models;
 
-public class AIInputController : MonoBehaviour, IController, IInputController
+public class AIInputController : MonoBehaviour, IInputController
 {
     private MovementController _player;
     private AIModel _AIModel;
@@ -64,5 +64,10 @@ public class AIInputController : MonoBehaviour, IController, IInputController
 
     public void HandleOnButtonPressed(ControllerButton p_controllerButton, int p_playerIndex)
     {
+    }
+
+    public void ToggleOverseerMode(bool becomesOverseer)
+    {
+        throw new System.NotImplementedException();
     }
 }

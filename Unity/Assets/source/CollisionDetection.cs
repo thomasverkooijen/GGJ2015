@@ -20,11 +20,11 @@ public class CollisionDetection{
 			
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(xPos , yPos) , Vector2.right , p_xVelocity);
 			if(hit){
-				Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.right*(hit.point.x - xPos));
+                //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.right*(hit.point.x - xPos));
 				return hit.point.x-xPos;
 			}
 			else{
-				Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.right*p_xVelocity);
+                //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.right*p_xVelocity);
 			}
 		}
 		return p_xVelocity;
@@ -41,12 +41,12 @@ public class CollisionDetection{
 
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(xPos , yPos) , Vector2.up , p_yVelocity);
 			if(hit){
-				Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.up*(hit.point.x - xPos));
+                //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.up*(hit.point.x - xPos));
 				_grounded = true;
 				return hit.point.x-xPos;
 			}
 			else{
-				Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.up*p_yVelocity);
+                //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.up*p_yVelocity);
 			}
 		}
 		return p_yVelocity;

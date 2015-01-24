@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameSettings : MonoBehaviour {
+public class GameSettings : Singleton<GameSettings>
+{
+    public static GameSettings Instance;
+    public GameObject AudioLibraryPrefab;
+    public GameObject GuiStateLibraryPrefab;
+    public GameObject GuiTweenLibrary;
 
-	public static GameSettings Instance;
-	public GameObject	AudioLibraryPrefab;
-	public GameObject	GuiStateLibraryPrefab;
-	public GameObject	GuiTweenLibrary;
+    public float Gravity;
 
-	public float		Gravity;
-	
-	void Awake(){
-		GameSettings.Instance = this;
-		AudioLibrary.Init(AudioLibraryPrefab);
-	}
+    void Awake()
+    {
+        AudioLibrary.Init(AudioLibraryPrefab);
+    }
 }

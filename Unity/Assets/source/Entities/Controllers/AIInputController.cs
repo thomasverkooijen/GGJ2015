@@ -36,9 +36,9 @@ public class AIInputController : MonoBehaviour, IInputController
         {
             HandleOnStickActive(StickType.LeftX, -Random.value, 5);
         }
-        if (_decisionValue >= 0.475f && _decisionValue <= .525f)
+        if (_decisionValue >= 0.425f && _decisionValue <= .575f)
         {
-            HandleOnButtonReleased(ControllerButton.A, 5);
+            HandleOnButtonPressed(ControllerButton.A, 5);
         }
     }
 

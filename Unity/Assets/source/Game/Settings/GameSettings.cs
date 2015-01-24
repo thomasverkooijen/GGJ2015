@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GameSettings : Singleton<GameSettings>
@@ -12,6 +12,6 @@ public class GameSettings : Singleton<GameSettings>
     void Awake(){
         AudioLibrary.Init(AudioLibraryPrefab);
 		AnimationLibrary.Init(AnimationLibraryPrefab);
-		EntityLibrary.Init(EntityLibraryPrefab);
+		PrefabLibrary.Init(EntityLibraryPrefab);
     }
 }

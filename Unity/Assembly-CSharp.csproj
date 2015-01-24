@@ -54,11 +54,14 @@
      <Compile Include="Assets\source\Entities\Base\Entity.cs" />
      <Compile Include="Assets\source\Entities\Base\IEntity.cs" />
      <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\CameraController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\PlayerInputController.cs" />
+     <Compile Include="Assets\source\Entities\Entity Management\EntityFactory.cs" />
+     <Compile Include="Assets\source\Entities\Entity Management\EntityManager.cs" />
      <Compile Include="Assets\source\Entities\Models\AIModel.cs" />
      <Compile Include="Assets\source\Entities\Models\IModel.cs" />
      <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
@@ -72,8 +75,8 @@
      <Compile Include="Assets\source\Management\Audio\AudioLibrary.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioManager.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioObject.cs" />
-     <Compile Include="Assets\source\Management\Entity\EntityFactory.cs" />
-     <Compile Include="Assets\source\Management\Entity\EntityLibrary.cs" />
+     <Compile Include="Assets\source\Management\Entity\PrefabFactory.cs" />
+     <Compile Include="Assets\source\Management\Entity\PrefabLibrary.cs" />
      <Compile Include="Assets\source\Management\Events\ControllerInputEventController.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventContainerBase.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventControllerBase.cs" />

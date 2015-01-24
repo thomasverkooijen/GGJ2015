@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\source\Management\Entity\EntityLibrary.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\source\Management\Entity\PrefabFactory.cs">
     <Files>
-      <File FileName="Assets\source\Management\Entity\EntityLibrary.cs" Line="35" Column="6" />
-      <File FileName="Assets\source\Management\Animation\AnimationLibrary.cs" Line="32" Column="2" />
+      <File FileName="Assets\source\Management\Entity\PrefabFactory.cs" Line="29" Column="3" />
+      <File FileName="Assets\source\Management\Entity\PrefabLibrary.cs" Line="40" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

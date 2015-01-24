@@ -61,7 +61,8 @@ public class PlayerInputController : EventContainerBase, IInputController
 			{
 			case ControllerButton.A:
 				if(IsOverseer){
-					Debug.Log("AddBlock");
+					Vector2 playerPos = gameObject.transform.position;
+					PrefabFactory.Build(null , "Tile" , new Vector2(Mathf.Floor(playerPos.x) , Mathf.Floor(playerPos.y)));
 				}
 				else if (_player != null){
 					_player.Jump();

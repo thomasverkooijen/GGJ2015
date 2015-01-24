@@ -87,7 +87,6 @@
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\TextSettings.cs" />
-    <None Include="Assets\Editor\Resources\Licenses.txt" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />

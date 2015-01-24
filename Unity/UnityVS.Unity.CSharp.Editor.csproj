@@ -87,25 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\GameObjectExtensions.cs" />
-    <Compile Include="Assets\Editor\GameObjectMergeActions.cs" />
-    <Compile Include="Assets\Editor\GitMergeWindow.cs" />
-    <Compile Include="Assets\Editor\MergeAction.cs" />
-    <Compile Include="Assets\Editor\MergeActionChangeValues.cs" />
-    <Compile Include="Assets\Editor\MergeActionDeleteComponent.cs" />
-    <Compile Include="Assets\Editor\MergeActionDeleteGameObject.cs" />
-    <Compile Include="Assets\Editor\MergeActionNewComponent.cs" />
-    <Compile Include="Assets\Editor\MergeActionNewGameObject.cs" />
-    <Compile Include="Assets\Editor\MergeManager.cs" />
-    <Compile Include="Assets\Editor\MergeManagerPrefab.cs" />
-    <Compile Include="Assets\Editor\MergeManagerScene.cs" />
-    <Compile Include="Assets\Editor\ObjectDictionaries.cs" />
-    <Compile Include="Assets\Editor\ObjectExtensions.cs" />
-    <Compile Include="Assets\Editor\ObjectIDFinder.cs" />
-    <Compile Include="Assets\Editor\Resources.cs" />
-    <Compile Include="Assets\Editor\SerializedPropertyExtensions.cs" />
     <Compile Include="Assets\Editor\SnapTool.cs" />
-    <None Include="Assets\Editor\Resources\Licenses.txt" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />

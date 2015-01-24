@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}</ProjectGuid>
+	<ProjectGuid>{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,11 +48,26 @@
   <ItemGroup>
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <Compile Include="Assets\source\CollisionDetection.cs" />
+     <Compile Include="Assets\source\Common\Game.cs" />
      <Compile Include="Assets\source\Common\MathHelper.cs" />
+     <Compile Include="Assets\source\Common\Singleton.cs" />
+     <Compile Include="Assets\source\Entities\Base\Entity.cs" />
+     <Compile Include="Assets\source\Entities\Base\IEntity.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\PlayerInputController.cs" />
+     <Compile Include="Assets\source\Entities\Models\AIModel.cs" />
+     <Compile Include="Assets\source\Entities\Models\IModel.cs" />
+     <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
+     <Compile Include="Assets\source\Entities\Views\IView.cs" />
      <Compile Include="Assets\source\Examples\InputExample.cs" />
-     <Compile Include="Assets\source\Game\Player\Player.cs" />
-     <Compile Include="Assets\source\Game\Player\PlayerBehaviour.cs" />
      <Compile Include="Assets\source\Game\Settings\GameSettings.cs" />
+     <Compile Include="Assets\source\Management\Animation\AnimationComponent.cs" />
+     <Compile Include="Assets\source\Management\Animation\AnimationLibrary.cs" />
+     <Compile Include="Assets\source\Management\Animation\AnimationManager.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioFilterManager.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioLibrary.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioManager.cs" />

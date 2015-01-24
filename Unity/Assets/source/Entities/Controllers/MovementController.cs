@@ -38,6 +38,8 @@ public class MovementController : MonoBehaviour, IMovementController
         if (_collisionDetection.Grounded) _yVelocity = 0;
 
         _yVelocity += GameSettings.Instance.Gravity * Time.deltaTime;
+		Debug.Log(gameObject);
+		AnimationManager.SetFps(gameObject , "WalkAnim" , (int)(_xVelocity*500));
     }
 
     public void Move(float p_speed)

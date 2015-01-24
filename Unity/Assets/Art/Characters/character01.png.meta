@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: cf6e6152c1718f84eadc80cc8b678181
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: character01_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1781
+        width: 240
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1783
+        width: 230
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_2
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1785
+        width: 218
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1512
+        width: 212
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1512
+        width: 214
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1513
+        width: 230
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1241
+        width: 242
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1239
+        width: 250
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_8
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1237
+        width: 258
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 963
+        width: 262
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_10
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 965
+        width: 250
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_11
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 965
+        width: 238
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 695
+        width: 233
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 695
+        width: 224
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_14
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 695
+        width: 223
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 421
+        width: 222
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 419
+        width: 228
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_17
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 417
+        width: 234
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character01_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 141
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

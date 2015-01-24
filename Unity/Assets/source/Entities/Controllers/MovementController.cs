@@ -81,6 +81,7 @@ public class MovementController : MonoBehaviour, IMovementController
 
     public void Move(float p_horizontal_speed, float p_vertical_speed)
     {
-        throw new System.NotImplementedException();
+        _xVelocity += p_horizontal_speed * _maxSpeed;
+        _yVelocity += p_vertical_speed * _maxSpeed;
     }
 }

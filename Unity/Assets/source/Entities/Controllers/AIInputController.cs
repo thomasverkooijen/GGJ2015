@@ -54,16 +54,16 @@ public class AIInputController : MonoBehaviour, IInputController
 
     public void HandleOnButtonReleased(ControllerButton p_controllerButton, int p_playerIndex)
     {
-        switch (p_controllerButton)
-        {
-            case ControllerButton.A:
-                if (_player != null) _player.Jump();
-                break;
-        }
     }
 
     public void HandleOnButtonPressed(ControllerButton p_controllerButton, int p_playerIndex)
     {
+		switch (p_controllerButton)
+		{
+		case ControllerButton.A:
+			if (_player != null) _player.Jump();
+			break;
+		}
     }
 
     public void ToggleOverseerMode(bool becomesOverseer)

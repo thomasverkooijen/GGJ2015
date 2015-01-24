@@ -5,12 +5,20 @@ public class CollisionDetection{
 
 	private int rayCount = 6;
 	private bool _grounded = false;
+	private bool _obstructed = false;
+	private GameObject _groundObject;
+	private GameObject _wallObject;
+
 	public bool Grounded{get{return _grounded;}}
+	public bool Obstructed{get{return _grounded;}}
+	public GameObject GroundObject{get{return _groundObject;}}
+	public GameObject WallObject{get{return _wallObject;}}
 
 	public CollisionDetection(){
 	}
 
 	public float GetHorizontalMovement(Vector2 p_pos , Vector2 p_size , float p_xVelocity){
+		_obstructed = false;
 		for(int i = 0 ; i < rayCount ; i++){
 			float xPos = p_pos.x + ((p_size.x/2)*Mathf.Sign(p_xVelocity));
 			float yPos = p_pos.y + (p_size.y/2) - ((p_size.y/(rayCount-1))*i);
@@ -21,6 +29,8 @@ public class CollisionDetection{
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(xPos , yPos) , Vector2.right , p_xVelocity);
 			if(hit){
                 //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.right*(hit.point.x - xPos));
+				_obstructed = true;
+				_wallObject = hit.collider.gameObject;
 				return hit.point.x-xPos;
 			}
 			else{
@@ -43,6 +53,7 @@ public class CollisionDetection{
 			if(hit){
                 //Debug.DrawRay(new Vector2(xPos , yPos) , Vector2.up*(hit.point.x - xPos));
 				_grounded = true;
+				_groundObject = hit.collider.gameObject;
 				return hit.point.x-xPos;
 			}
 			else{

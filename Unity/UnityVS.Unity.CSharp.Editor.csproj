@@ -61,6 +61,9 @@
     <Reference Include="XInputDotNetPure">
       <HintPath>Assets\Plugins\x86_64\XInputDotNetPure.dll</HintPath>
     </Reference>
+    <Reference Include="ShaderForge">
+      <HintPath>Assets\ShaderForge\Editor\ShaderForge.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
@@ -85,7 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\SnapTool.cs" />
+    <None Include="Assets\ShaderForge\Readme.txt" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
+    <None Include="Assets\ShaderForge\Editor\ShaderForge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
     <None Include="Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll" />

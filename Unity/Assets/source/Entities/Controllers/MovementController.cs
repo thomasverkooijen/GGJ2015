@@ -37,8 +37,47 @@ public class MovementController : MonoBehaviour, IMovementController
 
         if (_collisionDetection.Grounded) _yVelocity = 0;
 
+        HandleCollision();
+
         _yVelocity += GameSettings.Instance.Gravity * Time.deltaTime;
-		AnimationManager.SetFps(gameObject , "WalkAnim" , (int)(_xVelocity*500));
+        AnimationManager.SetFps(gameObject, "WalkAnim", (int)(_xVelocity * 500));
+    }
+
+    public void HandleCollision()
+    {
+        if (_collisionDetection.ObstructingObject != null)
+        {
+            HandleCollisionForObject(_collisionDetection.ObstructingObject);
+        }
+        if (_collisionDetection.GroundObject != null)
+        {
+            HandleCollisionForObject(_collisionDetection.GroundObject);
+        }
+    }
+
+    public void HandleCollisionForObject(GameObject collidingObject)
+    {
+        switch (collidingObject.tag)
+        {
+            case null:
+                break;
+            case "Finish":
+                Finish();
+                break;
+            case "Environmental":
+                HandleEnvironmental(collidingObject);
+                break;
+        }
+    }
+
+    private void HandleEnvironmental(GameObject environmental)
+    {
+        Debug.Log("Should handle code for " + environmental.name + " here.");
+    }
+
+    public void Finish()
+    {
+        EntityManager.Instance.EntityFinishes(this.gameObject);
     }
 
     public void Move(float p_speed)

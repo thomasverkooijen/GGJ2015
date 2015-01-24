@@ -84,6 +84,7 @@
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\TextSettings.cs" />
+     <None Include="Assets\ShaderForge\Readme.txt" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

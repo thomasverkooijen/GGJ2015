@@ -72,6 +72,8 @@
      <Compile Include="Assets\source\Management\Audio\AudioLibrary.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioManager.cs" />
      <Compile Include="Assets\source\Management\Audio\AudioObject.cs" />
+     <Compile Include="Assets\source\Management\Entity\EntityFactory.cs" />
+     <Compile Include="Assets\source\Management\Entity\EntityLibrary.cs" />
      <Compile Include="Assets\source\Management\Events\ControllerInputEventController.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventContainerBase.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventControllerBase.cs" />

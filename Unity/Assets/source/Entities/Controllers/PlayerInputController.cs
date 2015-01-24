@@ -51,23 +51,25 @@ public class PlayerInputController : EventContainerBase, IInputController
 
     public void HandleOnButtonReleased(ControllerButton p_controllerButton, int p_playerIndex)
     {
-        if (p_playerIndex == _playerIndex)
-        {
-            switch (p_controllerButton)
-            {
-                case ControllerButton.A:
-                    if (_player != null) _player.Jump();
-                    break;
-            }
-        }
     }
 
     public void HandleOnButtonPressed(ControllerButton p_controllerButton, int p_playerIndex)
     {
-        if (p_playerIndex == _playerIndex)
-        {
-            //Handle button presses here
-        }
+		if (p_playerIndex == _playerIndex)
+		{
+			switch (p_controllerButton)
+			{
+			case ControllerButton.A:
+				if(IsOverseer){
+					Vector2 playerPos = gameObject.transform.position;
+					PrefabFactory.Build(null , "Tile" , new Vector2(Mathf.Floor(playerPos.x) , Mathf.Floor(playerPos.y)));
+				}
+				else if (_player != null){
+					_player.Jump();
+				}
+				break;
+			}
+		}
     }
 
     public void ToggleOverseerMode(bool becomesOverseer)

@@ -28,15 +28,15 @@ public class AIInputController : MonoBehaviour, IInputController
 
     void Update()
     {
-        if (_decisionValue >= 0.7f)
+        if (_decisionValue >= .5f)
         {
             HandleOnStickActive(StickType.LeftX, Random.value, 5);
         }
-        if (_decisionValue <= 0.3f)
+        if (_decisionValue <= 0.15f)
         {
             HandleOnStickActive(StickType.LeftX, -Random.value, 5);
         }
-        if (_decisionValue >= 0.45f && _decisionValue <= .55f)
+        if (_decisionValue >= 0.475f && _decisionValue <= .525f)
         {
             HandleOnButtonReleased(ControllerButton.A, 5);
         }

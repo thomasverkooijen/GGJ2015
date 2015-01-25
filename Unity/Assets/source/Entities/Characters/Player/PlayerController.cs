@@ -43,7 +43,7 @@ public class PlayerController : MovementController
         _controllerInputController.OnButtonPressed += HandleOnButtonPressed;
         _model = gameObject.GetComponent<Player>() as Player;
         _view = gameObject.GetComponent<PlayerView>();
-        _randomTalkCounter = Random.Range(5, 30);
+        _randomTalkCounter = Random.Range(5 , 80);
     }
 
 
@@ -70,7 +70,7 @@ public class PlayerController : MovementController
         HandleObstructions();
         HandleAnimations();
         HandleFootsteps();
-        HandleTalking();
+        //HandleTalking();
         _landingCounter += Time.deltaTime;
         if (_prevOnGround == false && _onGround == true && _landingCounter > 0.5f)
         {
@@ -81,11 +81,12 @@ public class PlayerController : MovementController
 
     void HandleLanding(float speed)
     {
-        AudioSource s = AudioManager.Play(gameObject, true, "Landing");
+        /*AudioSource s = AudioManager.Play(null, false, "Landing");
         if (s != null)
         {
             s.volume = 0 - (speed / 75);
         }
+        */
     }
 
     void HandleTalking()
@@ -94,8 +95,9 @@ public class PlayerController : MovementController
         if (_talkCounter > _randomTalkCounter)
         {
             _talkCounter = 0;
-            _randomTalkCounter = Random.Range(5, 30);
-            AudioManager.Play(gameObject, true, "Talk");
+            _randomTalkCounter = Random.Range(30, 80);
+			Debug.Log("Play talk");
+            AudioManager.Play(null, false, "Talk");
         }
     }
 
@@ -108,7 +110,7 @@ public class PlayerController : MovementController
         if (_footstepCounter > currentMaxTimer)
         {
             _footstepCounter = 0;
-            AudioManager.Play(gameObject, true, "Footstep");
+            AudioManager.Play(null, false, "Footstep");
         }
     }
 
@@ -183,7 +185,7 @@ public class PlayerController : MovementController
                 if (_onGround)
                 {
                     Jump();
-                    AudioSource s = AudioManager.Play(gameObject, true, "PlayerJump");
+                    AudioSource s = AudioManager.Play(null, false , "PlayerJump");
                     s.pitch += _yVelocity / 30;
                     _animationComponentLegs = AnimationManager.Play(_view.PlayerLegs, "PlayerJump", 20, true);
                 }

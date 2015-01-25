@@ -82,7 +82,7 @@ public class CursorController : MovementController
         {
             _talkCounter = 0;
             _randomTalkCounter = Random.Range(5, 30);
-            AudioManager.Play(gameObject, true, "Talk");
+            //AudioManager.Play(gameObject, true, "Talk");
         }
     }
 
@@ -111,6 +111,7 @@ public class CursorController : MovementController
         }
         else
         {
+
             GameObject targetObject = MathHelper.GetClosestObjectInRange(GameManager.ActiveEntities, transform.position, this.gameObject);
             float distanceToTarget = Vector2.Distance(targetObject.transform.position, transform.position);
             if (distanceToTarget<=AcquisitionRange)
@@ -130,7 +131,7 @@ public class CursorController : MovementController
                 Destroy(explosion, explosion.GetComponent<ParticleSystem>().duration);
                 Destroy(newBeam, newBeam.GetComponent<ParticleSystem>().duration);
                 GameManager.RemoveEntity(targetObject);
-                
+				AudioManager.Play(null , false , "LaserBeam");
             }
         }
     }

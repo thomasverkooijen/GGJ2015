@@ -28,8 +28,10 @@ public static class GameManager{
 			//Load MENU scene
 			AudioManager.Clear();
             ActiveEntities = new List<GameObject>();
-			SetState(GameState.InGame);
             CreateAIPlayers();
+			AudioManager.Play(null , false , "MenuTheme" , true , -1);
+			AudioManager.Play(null , false , "SoundScape" , true , -1);
+			Debug.Log("Load Menu");
 			break;
 		case GameState.InGame:
 			//Load LEVEL scene
@@ -37,6 +39,9 @@ public static class GameManager{
             ActiveEntities = new List<GameObject>();
 			CreatePlayers();
 			CreateAIPlayers();
+			AudioManager.Play(null , false , "GameTheme" , true , -1);
+			AudioManager.Play(null , false , "SoundScape" , true , -1);
+			Debug.Log("Load Ingame");
 			break;
 		case GameState.Finish:
 			//go to ENDGAME scene
@@ -53,7 +58,7 @@ public static class GameManager{
 			Player p = g.GetComponent<Player>();
 			if(p != null) p.EntityID = i;
             ActiveEntities.Add(g);
-            if (i == 1)
+            if (i == 0)
             {
                 g.GetComponent<ControllerSelector>().SwitchController(true);
             }

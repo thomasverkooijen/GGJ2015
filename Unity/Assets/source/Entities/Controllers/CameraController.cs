@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour {
     void LateUpdate () {
         Vector3 newTargetPosition = Vector3.zero;
         newTargetPosition.z = -10;
-        newTargetPosition.x = EntityManager.Instance.FindCenterOfActiveEntities();
+        newTargetPosition.x = MathHelper.GetCenterOfGroupOfObjects(GameManager.ActiveEntities).x;
         transform.position = Vector3.Lerp(transform.position, newTargetPosition, LerpSpeed*Time.deltaTime);
 	}
 }

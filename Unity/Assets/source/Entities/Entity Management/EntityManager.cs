@@ -99,12 +99,12 @@ public class EntityManager : Singleton<EntityManager>
     public void OnGUI()
     {
         //TODO: Replace when properly starting on GUI
-        GUI.color = Color.black;
-        GUI.Box(new Rect(Screen.width - 150, 0, 150, 50), "");
-        GUI.color = Color.white;
-        GUI.Label(new Rect(Screen.width - 125, 0, 100, 25), "Players finished:");
-        GUI.Label(new Rect(Screen.width - 25, 0, 25, 25), NumberOfPlayersFinished.ToString());
-        GUI.Label(new Rect(Screen.width - 125, 30, 100, 25), "AI finished:");
-        GUI.Label(new Rect(Screen.width - 25, 30, 25, 25), NumberOfAIFinished.ToString());
+        //GUI.color = Color.black;
+        //GUI.Box(new Rect(Screen.width - 150, 0, 150, 50), "");
+        //GUI.color = Color.white;
+        //GUI.Label(new Rect(Screen.width - 125, 0, 100, 25), "Players finished:");
+        //GUI.Label(new Rect(Screen.width - 25, 0, 25, 25), NumberOfPlayersFinished.ToString());
+        //GUI.Label(new Rect(Screen.width - 125, 30, 100, 25), "AI finished:");
+        //GUI.Label(new Rect(Screen.width - 25, 30, 25, 25), NumberOfAIFinished.ToString());
     }
 }

@@ -197,6 +197,7 @@
      <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\CameraController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\EnvironmentController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
@@ -210,6 +211,7 @@
      <Compile Include="Assets\source\Entities\Views\M06PupilView.cs" />
      <Compile Include="Assets\source\Examples\InputExample.cs" />
      <Compile Include="Assets\source\Game\GameManager.cs" />
+     <Compile Include="Assets\source\Game\GameProgressTracker.cs" />
      <Compile Include="Assets\source\Game\Settings\GameSettings.cs" />
      <Compile Include="Assets\source\Management\Animation\AnimationComponent.cs" />
      <Compile Include="Assets\source\Management\Animation\AnimationLibrary.cs" />
@@ -224,9 +226,11 @@
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElement.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />
+     <Compile Include="Assets\source\Management\GUI\Menu\MenuHandler.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\TextSettings.cs" />
      <Compile Include="Assets\source\Management\Prefab\PrefabFactory.cs" />
      <Compile Include="Assets\source\Management\Prefab\PrefabLibrary.cs" />
+     <Compile Include="Assets\source\Management\Preloader.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.7.9.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />

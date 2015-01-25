@@ -24,7 +24,12 @@ public class CollisionDetection{
 			if(i == rayCount-1)	xPos+=p_size.x/100;
 
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(xPos , yPos) , Vector2.up , checkDist);
-			if(hit)	return true;
+            if (hit)
+            {
+                _groundObject = hit.collider.gameObject;
+                _groundObject.BroadcastMessage("OnHitByEntity", null, SendMessageOptions.DontRequireReceiver);
+                return true;
+            }
 		}
 		return false;
 	}
@@ -42,6 +47,7 @@ public class CollisionDetection{
 			if(hit){
 				_obstructed = true;
 				_obstructingObject = hit.collider.gameObject;
+                _obstructingObject.BroadcastMessage("OnHitByEntity", null, SendMessageOptions.DontRequireReceiver);
 				return hit.point.x-xPos;
 			}
 		}

@@ -8,8 +8,11 @@ public class GameSettings : Singleton<GameSettings>
 	public GameObject EntityLibraryPrefab;
 
     public float Gravity;
+    public int NumberOfPlayers = 2;
+    public int NumberOfAI = 10;
 
     void Awake(){
+        DontDestroyOnLoad(this.gameObject);
 		GameManager.SetState(GameState.LoadLibraries);
     }
 }

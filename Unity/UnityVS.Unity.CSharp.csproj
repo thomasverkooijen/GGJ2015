@@ -61,6 +61,12 @@
     <Compile Include="Assets\source\Common\Singleton.cs" />
     <Compile Include="Assets\source\Entities\Base\Entity.cs" />
     <Compile Include="Assets\source\Entities\Base\IEntity.cs" />
+    <Compile Include="Assets\source\Entities\Characters\AI\AIPlayerController.cs" />
+    <Compile Include="Assets\source\Entities\Characters\AI\AIPlayerView.cs" />
+    <Compile Include="Assets\source\Entities\Characters\AI\AIplayer.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\Player.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\PlayerController.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\PlayerView.cs" />
     <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\CameraController.cs" />
     <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
@@ -75,6 +81,7 @@
     <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
     <Compile Include="Assets\source\Entities\Views\IView.cs" />
     <Compile Include="Assets\source\Examples\InputExample.cs" />
+    <Compile Include="Assets\source\Game\GameManager.cs" />
     <Compile Include="Assets\source\Game\Settings\GameSettings.cs" />
     <Compile Include="Assets\source\Management\Animation\AnimationComponent.cs" />
     <Compile Include="Assets\source\Management\Animation\AnimationLibrary.cs" />
@@ -83,8 +90,6 @@
     <Compile Include="Assets\source\Management\Audio\AudioLibrary.cs" />
     <Compile Include="Assets\source\Management\Audio\AudioManager.cs" />
     <Compile Include="Assets\source\Management\Audio\AudioObject.cs" />
-    <Compile Include="Assets\source\Management\Entity\PrefabFactory.cs" />
-    <Compile Include="Assets\source\Management\Entity\PrefabLibrary.cs" />
     <Compile Include="Assets\source\Management\Events\ControllerInputEventController.cs" />
     <Compile Include="Assets\source\Management\Events\base\EventContainerBase.cs" />
     <Compile Include="Assets\source\Management\Events\base\EventControllerBase.cs" />
@@ -92,6 +97,8 @@
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />
     <Compile Include="Assets\source\Management\GUI\Menu\TextSettings.cs" />
+    <Compile Include="Assets\source\Management\Prefab\PrefabFactory.cs" />
+    <Compile Include="Assets\source\Management\Prefab\PrefabLibrary.cs" />
     <None Include="Assets\XInputDotNet\MITLicense.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />

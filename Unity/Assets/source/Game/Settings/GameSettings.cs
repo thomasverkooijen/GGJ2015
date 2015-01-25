@@ -10,8 +10,6 @@ public class GameSettings : Singleton<GameSettings>
     public float Gravity;
 
     void Awake(){
-        AudioLibrary.Init(AudioLibraryPrefab);
-		AnimationLibrary.Init(AnimationLibraryPrefab);
-		PrefabLibrary.Init(EntityLibraryPrefab);
+		GameManager.SetState(GameState.LoadLibraries);
     }
 }

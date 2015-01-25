@@ -18,7 +18,7 @@ public class EntityManager : Singleton<EntityManager>
     // Use this for initialization
     void Start()
     {
-        Players = new List<GameObject>();
+       /* Players = new List<GameObject>();
         EntityFactory.Instance.PopulateListOfPlayers(ref Players, PlayerPrefab, NumberOfPlayers);
         Players[0].GetComponent<PlayerInputController>().ToggleOverseerMode(true);
         AI = new List<GameObject>();
@@ -28,11 +28,12 @@ public class EntityManager : Singleton<EntityManager>
         {
             AllEntities.Add(ai);
         }
+        */
     }
 
     public float FindCenterOfActiveEntities()
     {
-        float leftBoundX = float.PositiveInfinity;
+        /*float leftBoundX = float.PositiveInfinity;
         float rightBoundX = float.NegativeInfinity;
         for(int i = 0; i < AllEntities.Count; i++)
         {
@@ -55,5 +56,6 @@ public class EntityManager : Singleton<EntityManager>
         }
         float center = (leftBoundX + rightBoundX) / 2;
         return center;
+        */ return 0;
     }
 }

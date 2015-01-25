@@ -40,6 +40,7 @@ public class ControllerInputEventController : EventControllerBase {
 	public event ButtonEventDelegate 	OnButtonPressed;
 	public event ButtonEventDelegate 	OnButtonReleased;
 	public event StickEventDelegate		OnStickActive;
+	public event StickEventDelegate		OnStickNotActive;
 
 	public ControllerInputEventController(EventContainerBase p_container) : base(p_container){
 		_states 		= new GamePadState[4];
@@ -175,14 +176,26 @@ public class ControllerInputEventController : EventControllerBase {
 				if(Mathf.Abs(_states[i].ThumbSticks.Left.X) > _deadZone){
 					if(OnStickActive != null) OnStickActive.Invoke(StickType.LeftX , _states[i].ThumbSticks.Left.X , i);
 				}
+				else{
+					if(OnStickNotActive != null) OnStickNotActive.Invoke(StickType.LeftX , 0 , i);
+				}
 				if(Mathf.Abs(_states[i].ThumbSticks.Left.Y) > _deadZone){
 					if(OnStickActive != null) OnStickActive.Invoke(StickType.LeftY , _states[i].ThumbSticks.Left.Y , i);
+				}
+				else{
+					if(OnStickNotActive != null) OnStickNotActive.Invoke(StickType.LeftY , 0 , i);
 				}
 				if(Mathf.Abs(_states[i].ThumbSticks.Right.X) > _deadZone){
 					if(OnStickActive != null) OnStickActive.Invoke(StickType.RightX , _states[i].ThumbSticks.Right.X , i);
 				}
+				else{
+					if(OnStickNotActive != null) OnStickNotActive.Invoke(StickType.RightX , 0 , i);
+				}
 				if(Mathf.Abs(_states[i].ThumbSticks.Right.Y) > _deadZone){
 					if(OnStickActive != null) OnStickActive.Invoke(StickType.RightY , _states[i].ThumbSticks.Right.Y , i);
+				}
+				else{
+					if(OnStickNotActive != null) OnStickNotActive.Invoke(StickType.RightY , 0 , i);
 				}
 			}
 		}

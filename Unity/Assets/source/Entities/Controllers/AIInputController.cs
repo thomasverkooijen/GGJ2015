@@ -47,7 +47,7 @@ public class AIInputController : MonoBehaviour, IInputController
         switch (p_stickType)
         {
             case StickType.LeftX:
-                if (_player != null) _player.Move(p_speed);
+                //if (_player != null) _player.Move(p_speed);
                 break;
         }
     }
@@ -61,7 +61,7 @@ public class AIInputController : MonoBehaviour, IInputController
 		switch (p_controllerButton)
 		{
 		case ControllerButton.A:
-			if (_player != null) _player.Jump();
+			//if (_player != null) _player.Jump();
 			break;
 		}
     }

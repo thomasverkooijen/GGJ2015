@@ -40,10 +40,10 @@ public class PlayerInputController : EventContainerBase, IInputController
             switch (p_stickType)
             {
                 case StickType.LeftX:
-                    if (_player != null) _player.Move(p_speed);
+                   // if (_player != null) _player.Move(p_speed);
                     break;
                 case StickType.LeftY:
-                    if (_player != null && IsOverseer) _player.Move(0.0f, p_speed);
+                    //if (_player != null && IsOverseer) _player.Move(0.0f, p_speed);
                     break;
             }
         }
@@ -65,7 +65,7 @@ public class PlayerInputController : EventContainerBase, IInputController
 					PrefabFactory.Build(null , "Tile" , new Vector2(Mathf.Floor(playerPos.x) , Mathf.Floor(playerPos.y)));
 				}
 				else if (_player != null){
-					_player.Jump();
+					//_player.Jump();
 				}
 				break;
 			}

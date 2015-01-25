@@ -81,5 +81,6 @@ public static class GameManager{
     public static void RemoveEntity(GameObject entity)
     {
         ActiveEntities.Remove(entity);
+        GameObject.Destroy(entity);
     }
 }

@@ -13,7 +13,6 @@ public class GameProgressTracker : MonoBehaviour {
     public static void ObjectFinished(GameObject g)
     {
         GameManager.RemoveEntity(g);
-        Destroy(g);
         FinishedObjects++;
     }
 }

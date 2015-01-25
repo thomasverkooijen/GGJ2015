@@ -83,6 +83,7 @@ public class PlayerController : MovementController {
 
 	void HandleAnimations(){
 
+<<<<<<< HEAD
 		if(_xVelocity >0){
 			transform.localScale = new Vector2(1 , 1);
 		}
@@ -91,6 +92,9 @@ public class PlayerController : MovementController {
 		}
 
 		bool _onGround = _collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f);
+=======
+		bool _onGround = _collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f, gameObject);
+>>>>>>> origin/master
 
 		if(!_onGround){
 
@@ -114,10 +118,18 @@ public class PlayerController : MovementController {
 				}
 			}
 		}
+<<<<<<< HEAD
 		else{
 			if(_animationComponentHead == null) _animationComponentHead = AnimationManager.Play(_view.PlayerHead , "HeadOneWalk" , 20 , true);
 			else if(_animationComponentHead.Name != "HeadOneWalk"){
 				_animationComponentHead = AnimationManager.Play(_view.PlayerHead , "HeadOneWalk" , 20 , true);
+=======
+
+		if(_collisionDetection.Grounded(transform.position , Vector2.one , _yVelocity, gameObject) == false){
+			if(_yVelocity > 0){
+				AnimationManager.Play(_view.PlayerLegs , "PlayerInAirUp" , 0 , true);
+				Debug.Log("PlayerInAirUp");
+>>>>>>> origin/master
 			}
 			AnimationManager.SetFps(_view.PlayerHead , "HeadOneWalk" , (int)(_xVelocity*Time.deltaTime*500));
 

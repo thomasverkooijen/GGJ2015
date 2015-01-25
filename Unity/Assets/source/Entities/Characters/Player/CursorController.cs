@@ -10,7 +10,8 @@ public class CursorController : MovementController
 
     private float _talkCounter = 0;
     private float _randomTalkCounter = 0;
-    private float AcquisitionRange = 1.0f;
+    private float AcquisitionRange = 2.5f;
+    public GameObject ExplosionPrefab;
 
     public void Activate()
     {
@@ -111,16 +112,25 @@ public class CursorController : MovementController
         else
         {
             GameObject targetObject = MathHelper.GetClosestObjectInRange(GameManager.ActiveEntities, transform.position, this.gameObject);
-            if (Vector2.Distance(targetObject.transform.position, transform.position)<=AcquisitionRange)
+            float distanceToTarget = Vector2.Distance(targetObject.transform.position, transform.position);
+            if (distanceToTarget<=AcquisitionRange)
             {
-                Vector2 beamLocation = MathHelper.GetCenterOfGroupOfObjects(new List<GameObject>{
+                Vector3 beamLocation = MathHelper.GetCenterOfGroupOfObjects(new List<GameObject>{
                         M06,
                         targetObject}
                     );
+                beamLocation.z = -3.0f;
                 GameObject newBeam = GameObject.Instantiate(LaserBeam, beamLocation, Quaternion.identity) as GameObject;
                 ParticleSystem beamSystem = newBeam.GetComponent<ParticleSystem>();
+                Vector2 fromM06ToTarget = targetObject.transform.position - M06.transform.position;
+                fromM06ToTarget.Normalize();
+                newBeam.transform.localScale = new Vector3(0.0f, 0.0f, Vector2.Distance(targetObject.transform.position, M06.transform.position));
+                newBeam.transform.rotation = Quaternion.LookRotation(fromM06ToTarget);
+                GameObject explosion = GameObject.Instantiate(ExplosionPrefab, targetObject.transform.position, Quaternion.identity) as GameObject;
+                Destroy(explosion, explosion.GetComponent<ParticleSystem>().duration);
                 Destroy(newBeam, newBeam.GetComponent<ParticleSystem>().duration);
-                Debug.Log("Found entity in range: "+targetObject);
+                GameManager.RemoveEntity(targetObject);
+                
             }
         }
     }
@@ -131,10 +141,10 @@ public class CursorController : MovementController
         switch (p_stickType)
         {
             case StickType.LeftX:
-                _xVelocity = MathHelper.IncrementTowards(_xVelocity, p_speed * _maxSpeed, _acceleration);
+                _xVelocity = p_speed * _maxSpeed;
                 break;
             case StickType.LeftY:
-                _yVelocity = MathHelper.IncrementTowards(_yVelocity, p_speed * _maxSpeed, _acceleration);
+                _yVelocity = p_speed * _maxSpeed;
                 break;
         }
     }
@@ -144,10 +154,10 @@ public class CursorController : MovementController
         switch (p_stickType)
         {
             case StickType.LeftX:
-                _xVelocity = MathHelper.IncrementTowards(_xVelocity, 0, _acceleration*2);
+                _xVelocity =0;//= MathHelper.IncrementTowards(_xVelocity, 0, _acceleration*2);
                 break;
             case StickType.LeftY:
-                _yVelocity = MathHelper.IncrementTowards(_yVelocity, 0, _acceleration*2);
+                _yVelocity = 0;//MathHelper.IncrementTowards(_yVelocity, 0, _acceleration*2);
                 break;
         }
     }

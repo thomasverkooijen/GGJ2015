@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 9ca53d8237b281642a30fec7fe231349
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lightningrod_0
+    21300002: lightningrod_1
+    21300004: lightningrod_2
+    21300006: lightningrod_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +29,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +46,46 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: lightningrod_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 100
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightningrod_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 136
+        width: 100
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightningrod_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 100
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lightningrod_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 16
+        width: 100
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

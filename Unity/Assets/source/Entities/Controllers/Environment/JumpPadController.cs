@@ -28,7 +28,7 @@ public class JumpPadController : EnvironmentController
             MovementController _movementController = hittingObject.GetComponent<MovementController>();
             if (_movementController != null)
             {
-                AnimationManager.Play(gameObject, "", 20, false);
+                //AnimationManager.Play(gameObject, "", 20, false);
                 GameObject _launchEffect = Instantiate(LaunchEffect, hittingObject.transform.position, Quaternion.identity) as GameObject;
                 Destroy(_launchEffect, _launchEffect.particleSystem.duration);
                 _movementController.Launch(LaunchStrength);

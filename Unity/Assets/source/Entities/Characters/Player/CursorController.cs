@@ -109,7 +109,11 @@ public class CursorController : MovementController
         RaycastHit2D raycastHitInfo = Physics2D.Raycast(transform.position, Vector2.zero);
         if (raycastHitInfo.collider!=null)
         {
-            Debug.Log(raycastHitInfo.collider.gameObject.name);
+            EnvironmentController environmentController = raycastHitInfo.collider.GetComponent<EnvironmentController>();
+            if (environmentController !=null)
+            {
+                environmentController.TogglePower();
+            }
         }
         else
         {

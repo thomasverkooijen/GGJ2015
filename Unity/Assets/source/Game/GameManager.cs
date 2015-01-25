@@ -40,7 +40,7 @@ public static class GameManager{
 	}
 
 	private static void CreatePlayers(){
-		for(int i = 0 ; i < 1 ; i++){
+		for(int i = 0 ; i < 2 ; i++){
 			GameObject g = PrefabFactory.Build(null , "Player" , new Vector2(0,10));
 			Player p = g.GetComponent<Player>();
 			if(p != null) p.EntityID = i;

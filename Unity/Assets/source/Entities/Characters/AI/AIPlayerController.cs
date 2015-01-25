@@ -24,6 +24,7 @@ public class AIPlayerController : MovementController {
 		HandleGravity();
 		HandleObstructions();
 		AnimationManager.SetFps(_view.PlayerLegs , "PlayerLegsWalk" , (int)(_xVelocity*450*Time.deltaTime));
+
 	}
 
 }

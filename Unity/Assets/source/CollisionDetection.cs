@@ -27,7 +27,7 @@ public class CollisionDetection{
             if (hit)
             {
                 _groundObject = hit.collider.gameObject;
-                _groundObject.BroadcastMessage("OnHitByEntity", null, SendMessageOptions.DontRequireReceiver);
+                _groundObject.BroadcastMessage("OnHitByEntity", new GameObject { }, SendMessageOptions.DontRequireReceiver);
                 return true;
             }
 		}
@@ -47,7 +47,7 @@ public class CollisionDetection{
 			if(hit){
 				_obstructed = true;
 				_obstructingObject = hit.collider.gameObject;
-                _obstructingObject.BroadcastMessage("OnHitByEntity", null, SendMessageOptions.DontRequireReceiver);
+                _obstructingObject.BroadcastMessage("OnHitByEntity", new GameObject { }, SendMessageOptions.DontRequireReceiver);
 				return hit.point.x-xPos;
 			}
 		}

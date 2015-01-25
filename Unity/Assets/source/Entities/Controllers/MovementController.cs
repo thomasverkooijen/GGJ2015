@@ -27,20 +27,20 @@ public abstract class MovementController : EventContainerBase, IMovementControll
 
     protected void HandleHorizontalMovement()
     {
-        float addedX = _collisionDetection.GetHorizontalMovement(transform.position, Vector2.one, _xVelocity * Time.deltaTime);
+        float addedX = _collisionDetection.GetHorizontalMovement(transform.position, Vector2.one, _xVelocity * Time.deltaTime, gameObject);
         transform.Translate(Vector2.right * addedX);
     }
 
     protected void HandleVerticalMovement()
     {
-        float addedY = _collisionDetection.GetVerticalMovement(transform.position, Vector2.one, _yVelocity * Time.deltaTime);
+        float addedY = _collisionDetection.GetVerticalMovement(transform.position, Vector2.one, _yVelocity * Time.deltaTime, gameObject);
         transform.Translate(Vector2.up * addedY);
     }
 
     protected void HandleGravity()
     {
         _yVelocity += GameSettings.Instance.Gravity * Time.deltaTime;
-        if (_collisionDetection.Grounded(transform.position, Vector2.one, _yVelocity * Time.deltaTime)) _yVelocity = 0;
+        if (_collisionDetection.Grounded(transform.position, Vector2.one, _yVelocity * Time.deltaTime, gameObject)) _yVelocity = 0;
     }
     protected void HandleObstructions()
     {

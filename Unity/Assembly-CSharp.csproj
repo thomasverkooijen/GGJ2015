@@ -197,7 +197,10 @@
      <Compile Include="Assets\source\Entities\Controllers\AIInputController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\CameraController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\CursorMovementController.cs" />
-     <Compile Include="Assets\source\Entities\Controllers\EnvironmentController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\Environment\EnvironmentController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\Environment\FinishController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\Environment\JumpPadController.cs" />
+     <Compile Include="Assets\source\Entities\Controllers\Environment\PressurePadController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IInputController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\IMovementController.cs" />
      <Compile Include="Assets\source\Entities\Controllers\MovementController.cs" />
@@ -223,6 +226,7 @@
      <Compile Include="Assets\source\Management\Events\ControllerInputEventController.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventContainerBase.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventControllerBase.cs" />
+     <Compile Include="Assets\source\Management\GUI\Level\UpdateFinishedCounter.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElement.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementTexture.cs" />

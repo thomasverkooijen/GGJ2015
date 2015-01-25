@@ -61,4 +61,9 @@ public static class GameManager{
             ActiveEntities.Add(g);
 		}
 	}
+
+    public static void RemoveEntity(GameObject entity)
+    {
+        ActiveEntities.Remove(entity);
+    }
 }

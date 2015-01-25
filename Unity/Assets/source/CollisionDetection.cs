@@ -6,11 +6,11 @@ public class CollisionDetection{
 	private int rayCount = 6;
 	private bool _obstructed = false;
 	private GameObject _groundObject;
-	private GameObject _wallObject;
+	private GameObject _obstructingObject;
 
 	public bool Obstructed{get{return _obstructed;}}
 	public GameObject GroundObject{get{return _groundObject;}}
-	public GameObject WallObject{get{return _wallObject;}}
+	public GameObject ObstructingObject{get{return _obstructingObject;}}
 
 	public CollisionDetection(){
 	}
@@ -41,7 +41,7 @@ public class CollisionDetection{
 			RaycastHit2D hit = Physics2D.Raycast(new Vector2(xPos , yPos) , Vector2.right , p_xVelocity);
 			if(hit){
 				_obstructed = true;
-				_wallObject = hit.collider.gameObject;
+				_obstructingObject = hit.collider.gameObject;
 				return hit.point.x-xPos;
 			}
 		}

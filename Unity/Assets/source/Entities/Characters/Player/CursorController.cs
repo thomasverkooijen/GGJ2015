@@ -20,6 +20,8 @@ public class CursorController : MovementController
             _view.Activate();
             this.enabled = true;
         }
+        M06 = GameObject.FindGameObjectWithTag("M06");
+        M06.GetComponent<MoveAlongTarget>().SetTarget(this.gameObject);
     }
 
     public void Deactivate()
@@ -129,8 +131,7 @@ public class CursorController : MovementController
                 GameObject explosion = GameObject.Instantiate(ExplosionPrefab, targetObject.transform.position, Quaternion.identity) as GameObject;
                 Destroy(explosion, explosion.GetComponent<ParticleSystem>().duration);
                 Destroy(newBeam, newBeam.GetComponent<ParticleSystem>().duration);
-                GameManager.RemoveEntity(targetObject);
-                
+                GameManager.RemoveEntity(targetObject);   
             }
         }
     }

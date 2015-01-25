@@ -5,8 +5,10 @@ public class JumpPadController : EnvironmentController
 {
     public float LaunchStrength = 30;
 
+    public GameObject LaunchEffect;
+
     public float Cooldown = 2.5f;
-    private float _cooldownTimer = 0.0f;
+    private float _cooldownTimer = 3.0f;
 
     void Update()
     {
@@ -26,7 +28,9 @@ public class JumpPadController : EnvironmentController
             MovementController _movementController = hittingObject.GetComponent<MovementController>();
             if (_movementController != null)
             {
-                Debug.Log("Blastoff!");
+                AnimationManager.Play(gameObject, "", 20, false);
+                GameObject _launchEffect = Instantiate(LaunchEffect, hittingObject.transform.position, Quaternion.identity) as GameObject;
+                Destroy(_launchEffect, _launchEffect.particleSystem.duration);
                 _movementController.Launch(LaunchStrength);
                 _cooldownTimer = 0.0f;
             }

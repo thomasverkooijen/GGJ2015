@@ -18,6 +18,9 @@ public abstract class MovementController : EventContainerBase, IMovementControll
 
     private MovementModel _movementModel;
 
+    private bool _shouldLaunch = false;
+    private float _launchForce = 0.0f;
+
     protected override void Awake()
     {
         _controllerInputController = new ControllerInputEventController(this);
@@ -55,8 +58,20 @@ public abstract class MovementController : EventContainerBase, IMovementControll
         }
     }
 
-    public void Launch(float _jumpForce)
+    public void Launch(float p_jumpForce)
     {
-        _yVelocity = _jumpForce;
+        _launchForce = p_jumpForce;
+        _shouldLaunch = true;
     }
+
+void LateUpdate()
+{
+    if (_shouldLaunch)
+    {
+        _yVelocity = _launchForce;
+        _shouldLaunch = false;
+    }
+}
+
+
 }

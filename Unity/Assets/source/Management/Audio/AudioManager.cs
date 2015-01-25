@@ -57,6 +57,10 @@ public static class AudioManager {
 			Debug.Log("Cant find audioLibrary Event with name ("+p_eventName+")");
 			return null;
 		}
+		if(audioDictionary.audioClips == null){
+			Debug.Log("Audioclips in Event with name ("+p_eventName+") are null");
+			return null;
+		}
 		int 				randomClipIndex	= Random.Range(0,audioDictionary.audioClips.Length);
 		float 				randomVolume	= Random.Range(audioDictionary.volumeMin , audioDictionary.volumeMax);
 		float 				randomPitch		= Random.Range(audioDictionary.pitchMin , audioDictionary.pitchMax);

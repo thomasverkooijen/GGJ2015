@@ -235,6 +235,7 @@
     <Compile Include="Assets\source\Examples\InputExample.cs" />
     <Compile Include="Assets\source\Game\GameManager.cs" />
     <Compile Include="Assets\source\Game\GameProgressTracker.cs" />
+    <Compile Include="Assets\source\Game\Music.cs" />
     <Compile Include="Assets\source\Game\Settings\GameSettings.cs" />
     <Compile Include="Assets\source\Jeroen\LoadLibrary.cs" />
     <Compile Include="Assets\source\Management\Animation\AnimationComponent.cs" />

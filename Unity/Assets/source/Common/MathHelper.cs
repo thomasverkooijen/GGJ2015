@@ -12,6 +12,7 @@ public static class MathHelper{
 	}
 
 	public static Vector2 GetCenterOfGroupOfObjects(List<GameObject> p_objects){
+        p_objects.RemoveAll(go => go.GetComponent<CursorController>().enabled == true);
 		float leftBoundX = float.PositiveInfinity;
 		float rightBoundX = float.NegativeInfinity;
 		float leftBoundY = float.PositiveInfinity;

@@ -26,6 +26,6 @@ public class MenuHandler : MonoBehaviour {
     public void LoadLevel(int _numberOfPlayers)
     {
         GameSettings.Instance.NumberOfPlayers = _numberOfPlayers;
-        Application.LoadLevel("Level");
+        Application.LoadLevel("Level4");
     }
 }

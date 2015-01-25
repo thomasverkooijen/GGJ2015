@@ -13,6 +13,8 @@ public class CursorController : MovementController
     private float AcquisitionRange = 2.5f;
     public GameObject ExplosionPrefab;
 
+	private int		_shotsLeft = 5;
+
     public void Activate()
     {
         if (_view != null)
@@ -50,6 +52,13 @@ public class CursorController : MovementController
         base.Start();
 
     }
+
+	void OnGUI(){
+		GUIStyle myStyle = new GUIStyle();
+		myStyle.fontSize = 30;
+		myStyle.alignment = TextAnchor.UpperCenter;
+		GUI.Label(new Rect(0,80,Screen.width , Screen.height) , "Shots left: " + _shotsLeft.ToString() , myStyle);
+	}
 
     protected override void Update()
     {
@@ -106,6 +115,7 @@ public class CursorController : MovementController
 
     private void PerformAction()
     {
+		if(_shotsLeft == 0) return;
         RaycastHit2D raycastHitInfo = Physics2D.Raycast(transform.position, Vector2.zero);
         if (raycastHitInfo.collider!=null)
         {
@@ -133,10 +143,19 @@ public class CursorController : MovementController
                 Destroy(explosion, explosion.GetComponent<ParticleSystem>().duration);
                 Destroy(newBeam, newBeam.GetComponent<ParticleSystem>().duration);
                 GameManager.RemoveEntity(targetObject);
+				Debug.Log("Play LaserBeam");
 				AudioManager.Play(null , false , "LaserBeam");
+				StartCoroutine(PlayExplode(0.2f));
+				_shotsLeft --;
             }
         }
     }
+
+	IEnumerator PlayExplode(float delay){
+		yield return new WaitForSeconds(delay);
+		Debug.Log("Player Explodes");
+		AudioManager.Play(null , false , "PlayerExplode");
+	}
 
     void HandleOnStickActive(StickType p_stickType, float p_speed, int p_playerIndex)
     {

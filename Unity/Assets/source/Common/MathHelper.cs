@@ -13,26 +13,43 @@ public static class MathHelper
         return (dir == Mathf.Sign(p_targetSpeed - p_currentSpeed)) ? p_currentSpeed : p_targetSpeed;
     }
 
-    public static Vector2 GetCenterOfGroupOfObjects(List<GameObject> p_objects)
-    {
-        //p_objects.RemoveAll(go => go == null);
-        //p_objects.RemoveAll(go => go.GetComponent<CursorController>().enabled == true);
-        float leftBoundX = float.PositiveInfinity;
-        float rightBoundX = float.NegativeInfinity;
-        float leftBoundY = float.PositiveInfinity;
-        float rightBoundY = float.NegativeInfinity;
-        foreach (GameObject g in p_objects)
-        {
-            if (g == null) continue;
-            if (g.transform.position.x <= leftBoundX) leftBoundX = g.transform.position.x;
-            if (g.transform.position.x >= rightBoundX) rightBoundX = g.transform.position.x;
-            if (g.transform.position.y <= leftBoundY) leftBoundY = g.transform.position.y;
-            if (g.transform.position.y >= rightBoundY) rightBoundY = g.transform.position.y;
-        }
-        float xCenter = (leftBoundX + rightBoundX) / 2;
-        float yCenter = (leftBoundY + rightBoundY) / 2;
-        return new Vector2(xCenter, yCenter);
-    }
+	public static Vector2 GetSizeOfGroupOfObjects(List<GameObject> p_objects)
+	{
+		float leftBoundX = float.PositiveInfinity;
+		float rightBoundX = float.NegativeInfinity;
+		float leftBoundY = float.PositiveInfinity;
+		float rightBoundY = float.NegativeInfinity;
+		foreach (GameObject g in p_objects)
+		{
+			if (g == null) continue;
+			if (g.transform.position.x <= leftBoundX) leftBoundX = g.transform.position.x;
+			if (g.transform.position.x >= rightBoundX) rightBoundX = g.transform.position.x;
+			if (g.transform.position.y <= leftBoundY) leftBoundY = g.transform.position.y;
+			if (g.transform.position.y >= rightBoundY) rightBoundY = g.transform.position.y;
+		}
+		return new Vector2(Mathf.Abs(leftBoundX-rightBoundX),Mathf.Abs(leftBoundY-rightBoundY));
+	}
+
+	public static Vector2 GetCenterOfGroupOfObjects(List<GameObject> p_objects)
+	{
+		//p_objects.RemoveAll(go => go == null);
+		//p_objects.RemoveAll(go => go.GetComponent<CursorController>().enabled == true);
+		float leftBoundX = float.PositiveInfinity;
+		float rightBoundX = float.NegativeInfinity;
+		float leftBoundY = float.PositiveInfinity;
+		float rightBoundY = float.NegativeInfinity;
+		foreach (GameObject g in p_objects)
+		{
+			if (g == null) continue;
+			if (g.transform.position.x <= leftBoundX) leftBoundX = g.transform.position.x;
+			if (g.transform.position.x >= rightBoundX) rightBoundX = g.transform.position.x;
+			if (g.transform.position.y <= leftBoundY) leftBoundY = g.transform.position.y;
+			if (g.transform.position.y >= rightBoundY) rightBoundY = g.transform.position.y;
+		}
+		float xCenter = (leftBoundX + rightBoundX) / 2;
+		float yCenter = (leftBoundY + rightBoundY) / 2;
+		return new Vector2(xCenter, yCenter);
+	}
 
     public static GameObject GetClosestObjectInRange(List<GameObject> p_objects, Vector2 p_target, GameObject ignoredGameObject)
     {

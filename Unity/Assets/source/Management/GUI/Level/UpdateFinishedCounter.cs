@@ -12,6 +12,6 @@ public class UpdateFinishedCounter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        UILabel.text = "Finished: " + GameProgressTracker.FinishedObjects;
+        UILabel.text = "Sentient robots remaining: " + (GameManager.ActiveEntities.FindAll(go => go.GetComponent<PlayerController>() != null).Count-1).ToString();
 	}
 }

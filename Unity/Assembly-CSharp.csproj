@@ -237,6 +237,7 @@
      <Compile Include="Assets\source\Management\Events\ControllerInputEventController.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventContainerBase.cs" />
      <Compile Include="Assets\source\Management\Events\base\EventControllerBase.cs" />
+     <Compile Include="Assets\source\Management\GUI\Level\GameOverHandler.cs" />
      <Compile Include="Assets\source\Management\GUI\Level\UpdateFinishedCounter.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElement.cs" />
      <Compile Include="Assets\source\Management\GUI\Menu\Elements\MenuElementLabel.cs" />

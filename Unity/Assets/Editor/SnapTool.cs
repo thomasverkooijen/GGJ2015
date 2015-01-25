@@ -5,7 +5,7 @@ public class SnapTool : EditorWindow {
 
 	private static SnapTool _instance;
 
-	private int _snapSize = 1;
+	private float _snapSize = 1;
 
 	[MenuItem("LevelDesign/SnapTool")]
 	static void Init(){
@@ -13,7 +13,7 @@ public class SnapTool : EditorWindow {
 	}
 
 	void OnGUI(){
-		_snapSize = EditorGUILayout.IntField("Size:" , _snapSize);
+		_snapSize = EditorGUILayout.FloatField("Size:" , _snapSize);
 	}
 
 	void Update(){

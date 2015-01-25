@@ -26,12 +26,14 @@ public static class GameManager{
 			break;
 		case GameState.Menu:
 			//Load MENU scene
+			AudioManager.Clear();
             ActiveEntities = new List<GameObject>();
 			SetState(GameState.InGame);
             CreateAIPlayers();
 			break;
 		case GameState.InGame:
 			//Load LEVEL scene
+			AudioManager.Clear();
             ActiveEntities = new List<GameObject>();
 			CreatePlayers();
 			CreateAIPlayers();
@@ -51,7 +53,7 @@ public static class GameManager{
 			Player p = g.GetComponent<Player>();
 			if(p != null) p.EntityID = i;
             ActiveEntities.Add(g);
-            if (i == 0)
+            if (i == 1)
             {
                 g.GetComponent<ControllerSelector>().SwitchController(true);
             }

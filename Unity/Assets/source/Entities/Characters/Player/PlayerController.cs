@@ -160,25 +160,16 @@ public class PlayerController : MovementController
             if (_animationComponentHead == null) _animationComponentHead = AnimationManager.Play(_view.PlayerHead, "HeadOneWalk", 20, true);
             else if (_animationComponentHead.Name != "HeadOneWalk")
             {
-                _animationComponentHead = AnimationManager.Play(_view.PlayerHead, "HeadOneWalk", 20, true);
+        		_animationComponentHead = AnimationManager.Play(_view.PlayerHead, "HeadOneWalk", 20, true);
+			}
 
-                if (_collisionDetection.Grounded(transform.position, Vector2.one, _yVelocity, gameObject) == false)
-                {
-                    if (_yVelocity > 0)
-                    {
-                        AnimationManager.Play(_view.PlayerLegs, "PlayerInAirUp", 0, true);
-                        Debug.Log("PlayerInAirUp");
-                    }
-                    AnimationManager.SetFps(_view.PlayerHead, "HeadOneWalk", (int)(_xVelocity * Time.deltaTime * 500));
-
-                    if (_animationComponentLegs == null) _animationComponentLegs = AnimationManager.Play(_view.PlayerLegs, "PlayerMovement", 20, true);
-                    else if (_animationComponentLegs.Name != "PlayerMovement")
-                    {
-                        _animationComponentLegs = AnimationManager.Play(_view.PlayerLegs, "PlayerMovement", 20, true);
-                    }
-                    AnimationManager.SetFps(_view.PlayerLegs, "PlayerMovement", Mathf.Abs((int)(_xVelocity * Time.deltaTime * 500)));
-                }
+           	if (_animationComponentLegs == null) _animationComponentLegs = AnimationManager.Play(_view.PlayerLegs, "PlayerMovement", 20, true);
+            else if (_animationComponentLegs.Name != "PlayerMovement")
+	        {
+	        	_animationComponentLegs = AnimationManager.Play(_view.PlayerLegs, "PlayerMovement", 20, true);
             }
+			AnimationManager.SetFps(_view.PlayerLegs, "PlayerMovement", Mathf.Abs((int)(_xVelocity * Time.deltaTime * 500)));
+			AnimationManager.SetFps(_view.PlayerHead, "HeadOneWalk", Mathf.Abs((int)(_xVelocity * Time.deltaTime * 500)));
         }
     }
 

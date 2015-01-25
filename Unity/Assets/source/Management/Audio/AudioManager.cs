@@ -25,6 +25,10 @@ public static class AudioManager {
 		return audioDictionary;
 	}
 
+	public static void Clear(){
+		_audioObjectList.Clear();
+	}
+
 	public static AudioClip GetAudioClip(string p_eventName){
 		AudioDictionary audioDictionary = GetAudioDictionary(p_eventName);
 		if(audioDictionary == null){

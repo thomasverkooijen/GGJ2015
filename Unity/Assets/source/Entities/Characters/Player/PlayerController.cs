@@ -37,7 +37,7 @@ public class PlayerController : MovementController {
 
 	void HandleAnimations(){
 
-		bool _onGround = _collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f);
+		bool _onGround = _collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f, gameObject);
 
 		if(!_onGround){
 			if(_yVelocity > 0){
@@ -59,7 +59,7 @@ public class PlayerController : MovementController {
 			}
 		}
 
-		if(_collisionDetection.Grounded(transform.position , Vector2.one , _yVelocity) == false){
+		if(_collisionDetection.Grounded(transform.position , Vector2.one , _yVelocity, gameObject) == false){
 			if(_yVelocity > 0){
 				AnimationManager.Play(_view.PlayerLegs , "PlayerInAirUp" , 0 , true);
 				Debug.Log("PlayerInAirUp");

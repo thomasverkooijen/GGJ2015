@@ -49,10 +49,14 @@ public abstract class MovementController : EventContainerBase, IMovementControll
 
     protected void Jump()
     {
-        if (_collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f))
+        if (_collisionDetection.Grounded(transform.position, Vector2.one, (_yVelocity * Time.deltaTime) - 0.1f, gameObject))
         {
             _yVelocity = _jumpForce;
         }
     }
 
+    public void Launch(float _jumpForce)
+    {
+        _yVelocity = _jumpForce;
+    }
 }

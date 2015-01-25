@@ -129,6 +129,7 @@ public class CollisionDetection{
             if (hit)
             {
                 _groundObject = hit.collider.gameObject;
+                _groundObject.BroadcastMessage("OnHitByEntity", sender, SendMessageOptions.DontRequireReceiver);
                 return hit.point.x - xPos;
             }
         }

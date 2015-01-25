@@ -190,6 +190,7 @@
      <Compile Include="Assets\source\Entities\Base\IEntity.cs" />
      <Compile Include="Assets\source\Entities\Characters\AI\AIPlayerController.cs" />
      <Compile Include="Assets\source\Entities\Characters\AI\AIPlayerView.cs" />
+     <Compile Include="Assets\source\Entities\Characters\AI\AIState.cs" />
      <Compile Include="Assets\source\Entities\Characters\AI\AIplayer.cs" />
      <Compile Include="Assets\source\Entities\Characters\Player\Player.cs" />
      <Compile Include="Assets\source\Entities\Characters\Player\PlayerController.cs" />

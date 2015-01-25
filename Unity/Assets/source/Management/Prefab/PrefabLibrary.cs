@@ -34,7 +34,7 @@ public class PrefabLibrary : MonoBehaviour {
 		foreach(PrefabLibraryItem item in prefabLibraryItems){
 			PrefabFactory.Addentity(item.PrefabName , item.Prefab);
 		}
-		GameManager.SetState(GameState.Menu);
+		GameManager.SetState(GameState.InGame);
 	}
 
 }

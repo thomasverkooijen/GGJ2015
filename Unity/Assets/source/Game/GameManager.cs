@@ -27,13 +27,14 @@ public static class GameManager{
 		case GameState.Menu:
 			//Load MENU scene
             ActiveEntities = new List<GameObject>();
-            CreateAIPlayers();
+			SetState(GameState.InGame);
+            //CreateAIPlayers();
 			break;
 		case GameState.InGame:
 			//Load LEVEL scene
             ActiveEntities = new List<GameObject>();
 			CreatePlayers();
-			CreateAIPlayers();
+			//CreateAIPlayers();
 			break;
 		case GameState.Finsh:
 			//go to ENDGAME scene

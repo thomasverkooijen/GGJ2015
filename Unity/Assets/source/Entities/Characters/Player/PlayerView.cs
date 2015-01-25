@@ -13,7 +13,7 @@ public class PlayerView : MonoBehaviour {
 		if(_playerHead == null){
 			_playerHead = new GameObject("PlayerHead");
 			_playerHead.transform.parent = transform;
-			_playerHead.transform.localPosition = Vector3.zero;
+			_playerHead.transform.localPosition = (Vector2.up/2);
 		}
 		if(_playerLegs == null){
 			_playerLegs = new GameObject("PlayerLegs");

@@ -13,8 +13,8 @@ public class AIPlayerController : MovementController {
 
 	protected override void Start (){
 		base.Start ();
-		AnimationManager.Play(_view.PlayerHead , "PlayerHeadWalk" , 0 , true);
-		AnimationManager.Play(_view.PlayerLegs , "PlayerLegsWalk" , 0 , true);
+		//AnimationManager.Play(_view.PlayerHead , "PlayerHeadWalk" , 0 , true);
+		//AnimationManager.Play(_view.PlayerLegs , "PlayerLegsWalk" , 0 , true);
 	}
 	
 	protected override void Update(){

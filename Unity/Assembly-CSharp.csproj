@@ -201,6 +201,7 @@
      <Compile Include="Assets\source\Entities\Models\IModel.cs" />
      <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
      <Compile Include="Assets\source\Entities\Views\IView.cs" />
+     <Compile Include="Assets\source\Entities\Views\M06PupilView.cs" />
      <Compile Include="Assets\source\Examples\InputExample.cs" />
      <Compile Include="Assets\source\Game\Settings\GameSettings.cs" />
      <Compile Include="Assets\source\Management\Animation\AnimationComponent.cs" />

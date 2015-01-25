@@ -5,6 +5,9 @@ TextureImporter:
     21300000: electrotile01_0
     21300002: electrotile01_1
     21300004: electrotile01_2
+    21300006: electrotile01_3
+    21300008: electrotile01_4
+    21300010: electrotile01_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,7 +54,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 220
-        width: 220
+        width: 110
         height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -59,9 +62,9 @@ TextureImporter:
     - name: electrotile01_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 110
-        width: 220
+        x: 110
+        y: 220
+        width: 110
         height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -70,8 +73,38 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 110
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: electrotile01_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 110
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: electrotile01_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 220
+        width: 110
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: electrotile01_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 110
         height: 110
       alignment: 0
       pivot: {x: 0, y: 0}

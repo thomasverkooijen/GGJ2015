@@ -20,6 +20,8 @@ public class CursorController : MovementController
             _view.Activate();
             this.enabled = true;
         }
+        M06 = GameObject.FindGameObjectWithTag("M06");
+        M06.GetComponent<MoveAlongTarget>().SetTarget(this.gameObject);
     }
 
     public void Deactivate()

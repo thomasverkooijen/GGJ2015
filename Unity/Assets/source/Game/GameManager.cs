@@ -44,7 +44,12 @@ public static class GameManager{
 			Debug.Log("Load Ingame");
 			break;
 		case GameState.Finish:
-			//go to ENDGAME scene
+            foreach (GameObject entity in ActiveEntities)
+            {
+                RemoveEntity(entity);
+            }
+            ActiveEntities = new List<GameObject>();
+            //go to ENDGAME scene
 			break;
 		}
 	}

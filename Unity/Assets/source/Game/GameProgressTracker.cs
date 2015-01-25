@@ -14,5 +14,6 @@ public class GameProgressTracker : MonoBehaviour {
     {
         GameManager.RemoveEntity(g);
         FinishedObjects++;
+        GameManager.SetState(GameState.Finish);
     }
 }

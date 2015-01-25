@@ -27,4 +27,22 @@ public static class MathHelper{
 		return new Vector2(xCenter , yCenter);
 	}
 
+    public static GameObject GetClosestObjectInRange(List<GameObject> p_objects, Vector2 p_target, GameObject ignoredGameObject)
+    {
+        float smallestDistanceToTarget = float.PositiveInfinity;
+        GameObject returnObject = null;
+        foreach (GameObject g in p_objects)
+        {
+            if (g==ignoredGameObject)
+            {
+                continue;
+            }
+            if (Vector2.Distance(g.transform.position, p_target) <= smallestDistanceToTarget)
+            {
+                smallestDistanceToTarget = Vector2.Distance(g.transform.position, p_target);
+                returnObject = g;
+            }
+        }
+        return returnObject;
+    }
 }

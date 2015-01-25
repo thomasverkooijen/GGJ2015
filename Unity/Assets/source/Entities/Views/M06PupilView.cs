@@ -8,6 +8,8 @@ public class M06PupilView : MonoBehaviour {
 
     public float TwitchSpeed = 0.25f;
 
+    public float RestPositionProbability = 0.25f;
+
     private float _twitchTimer;
 
     public Vector3 _startPosition;
@@ -26,7 +28,15 @@ public class M06PupilView : MonoBehaviour {
 
     IEnumerator SelectNewTarget()
     {
-        _targetPosition = (Random.insideUnitSphere)/2 + _startPosition;
+        float selector = Random.value;
+        if (selector < RestPositionProbability)
+        {
+            _targetPosition = (Random.insideUnitSphere) / 2 + _startPosition;
+        }
+        else
+        {
+            _targetPosition = _startPosition;
+        }
         _twitchTimer = Random.Range(TwitchTimerLowerBound, TwitchTimerUpperBound);
         yield return new WaitForSeconds(_twitchTimer);
         StartCoroutine(SelectNewTarget());

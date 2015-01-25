@@ -17,6 +17,24 @@ public class PlayerController : MovementController
 
     private float _landingCounter = 0;
 
+    public void Deactivate()
+    {
+        if (_view != null)
+        {
+            _view.Deactivate();
+            this.enabled = false;
+        }
+    }
+
+    public void Activate()
+    {
+        if (_view != null)
+        {
+            _view.Activate();
+            this.enabled = true;
+        }
+    }
+
     protected override void Awake()
     {
         base.Awake();

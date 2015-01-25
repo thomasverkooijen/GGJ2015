@@ -203,6 +203,9 @@
     <Compile Include="Assets\source\Entities\Characters\AI\AIPlayerView.cs" />
     <Compile Include="Assets\source\Entities\Characters\AI\AIState.cs" />
     <Compile Include="Assets\source\Entities\Characters\AI\AIplayer.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\ControllerSelector.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\CursorController.cs" />
+    <Compile Include="Assets\source\Entities\Characters\Player\MoveAlongTarget.cs" />
     <Compile Include="Assets\source\Entities\Characters\Player\Player.cs" />
     <Compile Include="Assets\source\Entities\Characters\Player\PlayerController.cs" />
     <Compile Include="Assets\source\Entities\Characters\Player\PlayerView.cs" />
@@ -222,8 +225,11 @@
     <Compile Include="Assets\source\Entities\Models\AIModel.cs" />
     <Compile Include="Assets\source\Entities\Models\IModel.cs" />
     <Compile Include="Assets\source\Entities\Models\MovementModel.cs" />
+    <Compile Include="Assets\source\Entities\Views\CursorView.cs" />
     <Compile Include="Assets\source\Entities\Views\IView.cs" />
     <Compile Include="Assets\source\Entities\Views\M06PupilView.cs" />
+    <Compile Include="Assets\source\Entities\Views\RotateAroundAxis.cs" />
+    <Compile Include="Assets\source\Entities\Views\YawFromMovement.cs" />
     <Compile Include="Assets\source\Examples\InputExample.cs" />
     <Compile Include="Assets\source\Game\GameManager.cs" />
     <Compile Include="Assets\source\Game\GameProgressTracker.cs" />

@@ -6,7 +6,7 @@ public enum GameState{
 	LoadLibraries,
 	Menu,
 	InGame,
-	Finsh
+	Finish
 }
 
 public static class GameManager{
@@ -36,7 +36,7 @@ public static class GameManager{
 			CreatePlayers();
 			//CreateAIPlayers();
 			break;
-		case GameState.Finsh:
+		case GameState.Finish:
 			//go to ENDGAME scene
 			break;
 		}
@@ -47,10 +47,18 @@ public static class GameManager{
 
 	private static void CreatePlayers(){
 		for(int i = 0 ; i < GameSettings.Instance.NumberOfPlayers ; i++){
-			GameObject g = PrefabFactory.Build(null , "Player" , new Vector2(0,10));
+            GameObject g = PrefabFactory.Build(null , "Player" , new Vector2(0,10));
 			Player p = g.GetComponent<Player>();
 			if(p != null) p.EntityID = i;
             ActiveEntities.Add(g);
+            if (i == 0)
+            {
+                g.GetComponent<ControllerSelector>().SwitchController(true);
+            }
+            else
+            {
+                g.GetComponent<ControllerSelector>().SwitchController(false);
+            }
 		}
 	}
 

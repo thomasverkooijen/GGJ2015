@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+guid: 9f09b94c3f9e33b449ae4dce595970e6
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: spelervoeten02_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1881
+        width: 94
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1897
+        width: 96
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_2
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1881
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1891
+        width: 96
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1875
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_5
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1885
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_6
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1869
+        width: 88
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1877
+        width: 98
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_8
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1861
+        width: 86
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_9
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1869
+        width: 94
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_10
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1855
+        width: 176
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_11
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1849
+        width: 166
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1635
+        width: 158
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1631
+        width: 152
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1627
+        width: 146
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_15
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1627
+        width: 148
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_16
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1627
+        width: 148
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_17
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 1627
+        width: 148
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_18
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1627
+        width: 146
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1417
+        width: 146
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_20
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1417
+        width: 146
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_21
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1417
+        width: 146
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_22
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1417
+        width: 144
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_23
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1419
+        width: 144
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_24
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1419
+        width: 142
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_25
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1417
+        width: 144
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1207
+        width: 146
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_27
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1207
+        width: 148
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_28
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1211
+        width: 154
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_29
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1215
+        width: 162
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_30
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1219
+        width: 170
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_31
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1223
+        width: 178
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_32
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1227
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_33
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1229
+        width: 94
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1021
+        width: 86
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1025
+        width: 94
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_36
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1029
+        width: 88
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_37
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1037
+        width: 90
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_38
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1039
+        width: 88
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_39
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1047
+        width: 88
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_40
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1049
+        width: 94
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_41
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1059
+        width: 84
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_42
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1055
+        width: 92
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_43
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1065
+        width: 86
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_44
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1061
+        width: 90
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_45
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1071
+        width: 88
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_46
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1069
+        width: 92
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_47
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1079
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_48
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 859
+        width: 92
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_49
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 869
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_50
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 859
+        width: 96
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_51
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 869
+        width: 92
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_52
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 859
+        width: 98
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_53
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 871
+        width: 92
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_54
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 861
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_55
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 873
+        width: 92
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_56
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 859
+        width: 98
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_57
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 871
+        width: 92
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_58
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 859
+        width: 94
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_59
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 869
+        width: 90
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_60
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 831
+        width: 94
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_61
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 847
+        width: 96
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_62
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 627
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_63
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 641
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_64
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 629
+        width: 102
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_65
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 641
+        width: 76
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_66
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 631
+        width: 104
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_67
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 641
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_68
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 629
+        width: 90
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_69
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 639
+        width: 86
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_70
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 629
+        width: 78
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_71
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 637
+        width: 106
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_72
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 629
+        width: 98
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_73
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 633
+        width: 122
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_74
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 627
+        width: 106
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_75
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 635
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_76
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 415
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_77
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 427
+        width: 120
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_78
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 413
+        width: 244
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_79
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 433
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_80
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 417
+        width: 138
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_81
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 433
+        width: 104
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_82
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 419
+        width: 138
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_83
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 433
+        width: 94
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_84
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 417
+        width: 124
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_85
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 429
+        width: 86
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_86
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 417
+        width: 110
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_87
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 427
+        width: 84
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_88
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 207
+        width: 94
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_89
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 213
+        width: 98
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_90
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 205
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_91
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 211
+        width: 100
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_92
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 203
+        width: 84
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_93
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 209
+        width: 102
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_94
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 201
+        width: 76
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: spelervoeten02_95
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 209
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

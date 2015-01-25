@@ -32,14 +32,8 @@ public class AnimationLibrary : MonoBehaviour {
 	void Start(){
 		Debug.Log("[AnimationLibrary] (" + LibraryName + ") Filling Library");
 		foreach(AnimationLibraryItem item in animationLibraryItems){
-			AnimationManager.AddAnimation(item.AnimationName , item.Sprites);
+			AnimationManager.AddAnimation(item.AnimationName , item);
 		}
-		/*foreach(GameObject player in EntityManager.Instance.Players){
-			AnimationManager.Play(player , "WalkAnim" , 30 , true);
-		}
-		foreach(GameObject ai in EntityManager.Instance.AI){
-			AnimationManager.Play(ai , "WalkAnim" , 20 , true);
-		}*/
 	}
 
 	void Awake(){
